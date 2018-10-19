@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+   
+    <class name="com.beijzhihui.bean.WhoIsDemo" table="whoisdemo">
+        <id name="id" column="id" type="long">
+            <generator class="native"/>
+        </id>
+    	<!-- 属性的配置，必须有id，属性配置自己所需要的 -->  
+    	<property name="domain" column="domain"></property>
+    	<property name="registrar" column="registrar"></property>
+    	<property name="reg_email" column="reg_email"></property>
+    	<property name="registrar_whois_server" column="registrar_whois_server"></property>
+    	<property name="name_server" column="name_server"></property>
+    	<property name="reg_date" column="reg_date"></property>
+    	<property name="updated_date" column="updated_date"></property>
+    	<property name="expir_date" column="expir_date"></property>
+    	<property name="domain_status" column="domain_status"></property>
+    	<property name="registrar_abuse_contact_email" column="registrar_abuse_contact_email"></property>
+    	<property name="reg_name" column="reg_name"></property>
+    	<property name="registrant_organization" column="registrant_organization"></property>
+    	<property name="registrant_street1" column="registrant_street1"></property>
+    	<property name="registrant_street2" column="registrant_street2"></property>
+    	<property name="registrant_street3" column="registrant_street3"></property>
+    	<property name="registrant_street4" column="registrant_street4"></property>
+    	<property name="registrant_city" column="registrant_city"></property>
+    	<property name="registrant_state_province" column="registrant_state_province"></property>
+    	<property name="registrant_postal_code" column="registrant_postal_code"></property>
+    	<property name="reg_country" column="reg_country"></property>
+    	<property name="reg_fax" column="reg_fax"></property>
+    	<property name="registrant_fax_ext" column="registrant_fax_ext"></property>
+    	<property name="registrar_abuse_contact_phone" column="registrar_abuse_contact_phone"></property>
+    	<property name="registrant_phone_ext" column="registrant_phone_ext"></property>
+    	<property name="adm_email" column="adm_email"></property>
+    	<property name="adm_name" column="adm_name"></property>
+    	<property name="admin_organization" column="admin_organization"></property>
+    	<property name="administrativeContact_street1" column="administrativeContact_street1"></property>
+    	<property name="administrativeContact_street2" column="administrativeContact_street2"></property>
+    	<property name="administrativeContact_street3" column="administrativeContact_street3"></property>
+    	<property name="administrativeContact_street4" column="administrativeContact_street4"></property>
+    	<property name="admin_city" column="admin_city"></property>
+    	<property name="admin_state_province" column="admin_state_province"></property>
+    	<property name="admin_postal_code" column="admin_postal_code"></property>
+    	<property name="adm_country" column="adm_country"></property>
+    	<property name="adm_fax" column="adm_fax"></property>
+    	<property name="admin_fax_ext" column="admin_fax_ext"></property>
+    	<property name="adm_phone" column="adm_phone"></property>
+    	<property name="admin_phone_ext" column="admin_phone_ext"></property>
+    	<property name="tech_email" column="tech_email"></property>
+    	<property name="tech_name" column="tech_name"></property>
+    	<property name="tech_organization" column="tech_organization"></property>
+    	<property name="technicalContact_street1" column="technicalContact_street1"></property>
+    	<property name="technicalContact_street2" column="technicalContact_street2"></property>
+    	<property name="technicalContact_street3" column="technicalContact_street3"></property>
+    	<property name="technicalContact_street4" column="technicalContact_street4"></property>
+    	<property name="tech_city" column="tech_city"></property>
+    	<property name="tech_state_province" column="tech_state_province"></property>
+    	<property name="tech_postal_code" column="tech_postal_code"></property>
+    	<property name="tech_country" column="tech_country"></property>
+    	<property name="tech_fax" column="tech_fax"></property>
+    	<property name="tech_fax_ext" column="tech_fax_ext"></property>
+    	<property name="tech_phone" column="tech_phone"></property>
+    	<property name="tech_phone_ext" column="tech_phone_ext"></property>
+    	<property name="registrar_IANA_id" column="registrar_IANA_id"></property>
+    </class>
+    
+
+</hibernate-mapping>
